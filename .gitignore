@@ -18,8 +18,11 @@ DS_Store
 .npmignore
 .editorconfig
 
-dist
 
 .idea
+
+dist/
+notes.md
+node_modules/
 
 

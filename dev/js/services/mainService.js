@@ -1,4 +1,6 @@
-angular.module('devmtnTravel').service('mainSrv', function(){
+(function(){
+  'use strict';
+angular.module('devmtnTravel').service('mainSrv', [function(){
 
     this.travelInfo = [{
         city: 'New York',
@@ -25,4 +27,5 @@ angular.module('devmtnTravel').service('mainSrv', function(){
 
 
     }]
-})
+}])
+})();

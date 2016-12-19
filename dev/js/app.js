@@ -1,3 +1,5 @@
+(function(){
+  'use strict';
 angular.module('devmtnTravel', ['ui.router'])
     .config(function ($stateProvider, $urlRouterProvider) {
         $stateProvider
@@ -9,3 +11,4 @@ angular.module('devmtnTravel', ['ui.router'])
         $urlRouterProvider
             .otherwise('/');
     });
+  })();
