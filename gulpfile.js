@@ -159,7 +159,7 @@ gulp.task('scripts', function(){
 
 // Optimize Images task
 gulp.task('images', function (){
-  return gulp.src('./dev/img/*.{gif,jpg,png}')
+  return gulp.src('./dev/img/*.{gif, jpg, png, svg}')
     .pipe(gulp.dest('./dist/img/'))
 });
 
@@ -184,7 +184,8 @@ gulp.task('serveLocal', function(){
   });
 
   gulp.watch(['dev/styles.scss', './dev/*.{scss,css,sass,less,stylus}', './dev/**/*.{scss,css,sass,less,stylus}'], ['styles']);
-  gulp.watch(['*.html', './dev/*.html', './dev/**/*.html'], ['html','index']).on('change', reload);
+  gulp.watch(['*.html', './dev/*.html', './dev/**/*.html'], ['html','index'])
+  gulp.watch(['*.html', './dev/*.html', './dev/**/*.html']).on('change', reload);
   gulp.watch(['./dev/*js', './dev/**/*.js'], ['js-watch']);
 
 });
